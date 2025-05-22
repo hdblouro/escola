@@ -1,4 +1,6 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 // A URI indica o IP, a porta e BD a ser conectado
 const uri = "mongodb://127.0.0.1:27017/bdaula";

@@ -21,7 +21,7 @@ class DisciplinaController {
 
     public async list(_: Request, res: Response): Promise<any> {
         try {
-            const objects = await Disciplina.find().sort({ mail: "asc" });
+            const objects = await Disciplina.find().sort({ descricao: "asc" });
             return res.json(objects);
         } catch (error: any) {
             return res.json({ message: error.message });

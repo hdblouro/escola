@@ -75,7 +75,7 @@ const Professor_has_DisciplinaSchema = new Schema({
                 const disciplina = await Disciplina.findById(id);  // verifica se id existe na coleção disciplinas
                 return !!disciplina; // true se o usuário existir
             },
-            message: 'O ID do professor fornecido não existe',
+            message: 'O ID da disciplina fornecido não existe',
         },
     },
 
